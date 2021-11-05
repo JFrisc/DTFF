@@ -1,0 +1,2 @@
+# created environmentvariable reseach_path. Go to the folder via -> cd %research_path%
+#script (scriptfolder.bat) to create a folder you will find as a batch file in the DTFF repository 
