@@ -1,0 +1,65 @@
+#first go to the right directory. you can find it in the commandline with %research_path%
+
+mkdir versiocontrol1
+
+cd versioncontrol1
+
+git init
+
+mkdir data
+
+mkdir text
+
+#create notes.txt manually
+
+#create funcitons.py manually
+
+#manual creation of .gitignore file -> data/
+
+git status 
+
+git add .
+
+git commit -m "inital commit"
+
+echo THIS IS FINE>> notes.txt
+
+git add notes.txt
+
+git commit -m "a fine change" notes.txt
+
+echo THIS IS GOOD >notes.txt
+
+git add notes.txt
+
+git commit --amend -m "a good change"
+
+git log
+
+echo THIS IS BAD >notes.txt
+
+git reset --hard
+
+git status
+
+echo THIS IS THE BEST >notes.txt
+
+rm functions.py
+
+git add . 
+
+git commit -m "first-working"
+
+git log
+
+git revert HEAD --no-edit
+
+git remote add origin https://github.com/JFrisc/DTFF.git
+
+git branch -M main
+
+git push origin main
+
+
+
+
