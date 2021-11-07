@@ -1,0 +1,81 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+
+
+\usetheme{default}
+
+}
+
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\title[Digital Tools for Finance]{Creating a Beamer Presentation}
+
+\author{Bohren M. & Frischknecht J. & Steinberger L.}
+\institute[UZH]
+{
+University of Zurich \\
+\medskip
+
+}
+\date{\today} 
+
+\begin{document}
+
+\begin{frame}
+\titlepage 
+\end{frame}
+
+
+\begin{frame}
+\frametitle<presentation>{Here are some Theorems}
+\framesubtitle{And here is a subtitle}
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+is a continuous function.
+\end{theorem}
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}
+This is a theorem about right triangles and can be summarised in the next 
+equation 
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+\end{frame}
+
+
+\begin{frame}{Here is an Equation}
+\framesubtitle{And here is another subtitle}
+
+\begin{block}{Formula}
+    calculated in this equation
+    \begin{equation}    % <--- deleted empty lines
+            Total = \frac{1}{n}*\sum_{i=0}^n (whatever_i)
+    \end{equation}
+\end{block}
+    
+\end{frame}
+
+
+\begin{frame}{Here is a figure with two panels}
+\framesubtitle{And here is once more another subtitle}
+\begin{figure}
+  \centering
+  \subfloat[First subfigure\label{fig:a}]{\includegraphics[height=2cm,width=3cm]{fig1.png}}\qquad
+  \subfloat[Second subfigure\label{fig:b}]{\includegraphics[height=2cm,width=3cm]{fig2.png}}
+\caption{Two panel figure}
+\label{fig:1}
+\end{figure}
+  
+
+\end{frame}
+
+
+
+
+
+\end{document} 
